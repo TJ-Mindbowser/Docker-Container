@@ -1,0 +1,5 @@
+# Command To Create Image Outof Dockerfile
+sudo docker build -t node-demo-container .
+
+# Command To run container out of the generated image
+sudo docker run -dit -p 8080:3000 --name my-first-container node-image:latest
