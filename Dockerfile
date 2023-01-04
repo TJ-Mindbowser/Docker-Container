@@ -14,6 +14,7 @@ RUN npm install
 
 # Bundle app source
 COPY . .
-RUN chown -R 1000:1000 /root/.npm
+RUN chown -R 1000:8080 /root/.npm
 EXPOSE 3000
 CMD [ "npm", "run", "serve" ]
+

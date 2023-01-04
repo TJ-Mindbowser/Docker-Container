@@ -11,3 +11,9 @@ app.listen(8080, function (err) {
     if (err) console.log("Error in server setup")
     console.log("Server listening on Port 8080");
 })
+
+/**
+ * 1) DockerFile -> Configuration for our docker container
+ * 2) Image( Blueprint )
+ * 3) Image -> Container 8080:1000
+ */

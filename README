@@ -1,5 +1,15 @@
-# Command To Create Image Outof Dockerfile
-sudo docker build -t node-demo-container .
+# Command To Create Image Outof Dockerfile (make sure to use the '.')
+sudo docker build -t node-demo-container . 
+
+# Command for image list (To check if the image is created of not)
+sudo docker image ls
 
 # Command To run container out of the generated image
 sudo docker run -dit -p 8080:3000 --name my-first-container node-image:latest
+
+# Command to check container status
+sudo docker ps 
+
+# Command to stop the container
+sudo docker rm -f <containerId>
+
